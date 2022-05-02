@@ -4,4 +4,46 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: var(--VeryDarkBlue);
+}
+
+.container__content {
+  color: var(--PaleBlue);
+  width: 80%;
+  height: 30rem;
+  display: flex;
+  justify-content: space-between;
+  gap:  1rem;
+  /* background-color: var(--backgroundColor); */
+}
+
+.container_content-user {
+  flex: 20%;
+  background-color: var(--DarkBlue);
+  border-radius: 1rem;
+}
+
+.user-head {
+  height: 60%;
+  background-color: var(--blue);
+  border-radius: 1rem;
+  padding: 2rem 1rem;
+}
+
+.profile {
+  width: 6rem;
+  border: 3px solid white;
+  border-radius: 50%;
+}
+
+.profile-name {
+  font-weight: 400;
+  color: #fff;
+  font-size: 2rem;
+  margin-top: 1rem;
+
+}
+
+.container_content-activity {
+  flex: 80%;
 }
