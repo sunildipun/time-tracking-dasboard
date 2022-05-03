@@ -1,4 +1,4 @@
-[
+export const activityData = [
   {
     "title": "Work",
     "timeframes": {

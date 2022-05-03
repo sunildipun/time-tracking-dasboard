@@ -18,7 +18,7 @@
 }
 
 .container_content-user {
-  flex: 20%;
+  flex: 25%;
   background-color: var(--DarkBlue);
   border-radius: 1rem;
 }
@@ -30,6 +30,19 @@
   padding: 2rem 1rem;
 }
 
+.user-timeline {
+  padding: 1rem 1rem;
+}
+
+.timeline {
+  margin : 0.5rem;
+}
+
+.timeline:hover {
+  color: #fff;
+  cursor: pointer;
+}
+
 .profile {
   width: 6rem;
   border: 3px solid white;
@@ -39,11 +52,15 @@
 .profile-name {
   font-weight: 400;
   color: #fff;
-  font-size: 2rem;
+  font-size: 2.5rem;
   margin-top: 1rem;
 
 }
 
 .container_content-activity {
   flex: 80%;
+}
+
+.activity-list {
+  list-style: none;
 }
