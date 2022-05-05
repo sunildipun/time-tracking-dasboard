@@ -18,25 +18,31 @@ export function ActivityCard(props: any) {
         {
             props.data.map((item: {title: string, timeframes: any}) => {
                 return <li className="cards" style={{backgroundColor:  backgroundColor[item.title as keyof typeof backgroundColor] }}  key={item.title}>
+                    <div className="card">
                     {(() => {
                         switch (item.title) {
                         case 'Exercise':
-                            return <img src={Exercise} alt="exercise" />;
+                            return <img className="img" src={Exercise} alt="exercise" />;
                         case 'Play':
-                            return <img src={Play} alt="play" />;
+                            return <img className="img" src={Play} alt="play" />;
                         case 'Work':
-                            return <img src={Work} alt="work" />;
+                            return <img className="img" src={Work} alt="work" />;
                         case 'Social':
-                            return <img src={Social} alt="social"/>;
+                            return <img className="img" src={Social} alt="social"/>;
                         case 'Study':
-                            return <img src={Study} alt="study"/>;
+                            return <img className="img" src={Study} alt="study"/>;
                         case 'Self Care':
-                            return <img src={SocialCare} alt="self care" />
+                            return <img className="img" src={SocialCare} alt="self care" />
                         default:
                             return null;
                         }
                     })()}
-                    {item.title}
+                    <div className="card-content">
+                        <h1>
+                            {item.title}
+                        </h1>
+                    </div>
+                    </div>
                 </li>
             })
         }
