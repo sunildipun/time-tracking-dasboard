@@ -10,6 +10,8 @@ import Social from './../images/icon-social.svg';
 import Study from './../images/icon-study.svg';
 import SocialCare from './../images/icon-self-care.svg';
 
+import Ellipsis from './../images/icon-ellipsis.svg';
+
 
 
 export function ActivityCard(props: any) {
@@ -38,9 +40,12 @@ export function ActivityCard(props: any) {
                         }
                     })()}
                     <div className="card-content">
-                        <h1>
-                            {item.title}
-                        </h1>
+                        <div className="head">
+                            <h1>
+                                {item.title}
+                            </h1>
+                            <img className="ellipsis" src={Ellipsis} alt="icon"/>
+                        </div>
                     </div>
                     </div>
                 </li>

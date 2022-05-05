@@ -38,3 +38,21 @@
     height: 87%;
     padding: 0rem;
 }
+
+.card-content:hover {
+    background-color: var(--DesaturatedBlue);
+    cursor: pointer;
+    color: #fff;
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+.ellipsis:hover {
+    cursor: pointer;
+    fill: #fff;
+}
