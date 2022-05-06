@@ -36,7 +36,11 @@
     top: 2rem;
     width: 100%;
     height: 87%;
-    padding: 0rem;
+    padding: 1.5rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .card-content:hover {
@@ -49,10 +53,30 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 1rem;
+    /* padding: 0 1rem; */
+}
+
+.head h1 {
+    color: #fff;
+    margin: 0;
 }
 
 .ellipsis:hover {
     cursor: pointer;
     fill: #fff;
+}
+
+.current {
+    font-size: 4rem;
+    font-weight: 300;
+    margin: 0;
+}
+
+.previous {
+    display: flex;
+    justify-content: space-between;
+}
+
+.previous p {
+    margin: 0;
 }

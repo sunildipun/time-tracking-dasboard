@@ -46,6 +46,13 @@ export function ActivityCard(props: any) {
                             </h1>
                             <img className="ellipsis" src={Ellipsis} alt="icon"/>
                         </div>
+                        <div className="body">
+                            <h1 className="current">4hrs</h1>
+                            <div className="previous">
+                                <p>Last Week</p>
+                                <p>30hrs</p>
+                            </div>
+                        </div>
                     </div>
                     </div>
                 </li>
