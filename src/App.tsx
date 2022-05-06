@@ -1,11 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import image from './images/image-jeremy.png';
 import { ActivityCard } from './component/ActivityCard';
 import { activityData } from './data.js';
 
 function App() {
-  const timeline = ['Daily', 'Weekly', 'Monthly'];
+  const timeline = ['daily', 'weekly', 'monthly'];
+  const [timeLineSelected, setTimeline] = useState('daily');
 
   return (
     <section className="container">
@@ -21,13 +22,13 @@ function App() {
           <div className='user-timeline'>
           {
               timeline.map(item => {
-                return <p key={item} className='timeline'>{item}</p>
+                return <p key={item} className='timeline' onClick={() => setTimeline(item)}>{item}</p>
               })
           }
           </div>
         </div>
         <div className='container_content-activity'>
-            <ActivityCard data={activityData}/>
+            <ActivityCard data={activityData} timeline={timeLineSelected}/>
         </div>
       </main>
     </section>

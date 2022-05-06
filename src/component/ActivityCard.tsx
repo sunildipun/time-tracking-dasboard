@@ -16,9 +16,12 @@ import Ellipsis from './../images/icon-ellipsis.svg';
 
 export function ActivityCard(props: any) {
     // const activityData = props.data;
+    // console.log(props);
+    let timeLine = props.timeline;
     return <ul className="activityList">
         {
             props.data.map((item: {title: string, timeframes: any}) => {
+                console.log('Item', item);
                 return <li className="cards" style={{backgroundColor:  backgroundColor[item.title as keyof typeof backgroundColor] }}  key={item.title}>
                     <div className="card">
                     {(() => {
@@ -47,10 +50,10 @@ export function ActivityCard(props: any) {
                             <img className="ellipsis" src={Ellipsis} alt="icon"/>
                         </div>
                         <div className="body">
-                            <h1 className="current">4hrs</h1>
+                            <h1 className="current">{item.timeframes[timeLine].current}hrs</h1>
                             <div className="previous">
                                 <p>Last Week</p>
-                                <p>30hrs</p>
+                                <p>{item.timeframes[timeLine].previous} hrs</p>
                             </div>
                         </div>
                     </div>
