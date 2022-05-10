@@ -36,6 +36,7 @@
 
 .timeline {
   margin : 0.5rem;
+  text-transform: capitalize;
 }
 
 .timeline:hover {
@@ -63,4 +64,44 @@
 
 .activity-list {
   list-style: none;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .container {
+    height: 120%; 
+  }
+
+  .container__content {
+      width: 90%;
+      flex-direction: column;
+  }
+
+  .user-head {
+    display: flex;
+    height: auto;
+    gap: 1rem;
+    /* justify-content: space-between; */
+    align-items: center;
+  }
+
+  .profile {
+    height: 5rem;
+    width:5rem;
+  }
+
+  .report {
+    margin: 0
+  }
+
+  .profile-name {
+    font-size: 1.5rem;
+    margin: 0;
+    line-height: 2rem;
+  }
+
+  .user-timeline {
+    display: flex;
+    justify-content: space-between;
+  };
 }

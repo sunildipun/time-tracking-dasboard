@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import './ActivityCard.css';
 
 import {backgroundColor} from './../data.js';
@@ -18,6 +18,13 @@ export function ActivityCard(props: any) {
     // const activityData = props.data;
     // console.log(props);
     let timeLine = props.timeline;
+    let [timeLineTitle, setTimelineTitle] = useState('Day')
+    // switch(timeLine) {
+    //     case 'daily': setTimelineTitle('Day'); break;
+    //     case 'weekly': setTimelineTitle('Week'); break;
+    //     case 'monthly': setTimelineTitle('Month'); break;
+    //     default: setTimelineTitle('Day');
+    // }
     return <ul className="activityList">
         {
             props.data.map((item: {title: string, timeframes: any}) => {
@@ -52,8 +59,8 @@ export function ActivityCard(props: any) {
                         <div className="body">
                             <h1 className="current">{item.timeframes[timeLine].current}hrs</h1>
                             <div className="previous">
-                                <p>Last Week</p>
-                                <p>{item.timeframes[timeLine].previous} hrs</p>
+                                <p>Last {timeLineTitle} - {item.timeframes[timeLine].previous} hrs</p>
+                                {/* <p>{item.timeframes[timeLine].previous} hrs</p> */}
                             </div>
                         </div>
                     </div>

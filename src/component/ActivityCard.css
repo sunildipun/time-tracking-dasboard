@@ -72,11 +72,35 @@
     margin: 0;
 }
 
-.previous {
+/* .previous {
     display: flex;
     justify-content: space-between;
-}
+} */
 
 .previous p {
     margin: 0;
+}
+
+@media only screen and (max-width: 600px) {
+    .activityList {
+        flex-direction: column;
+    }
+    
+    .cards {
+        flex: auto;
+        margin-top: 1rem;
+        height: 10rem;
+    }
+
+    .body {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .current {
+        font-size: 2rem;
+    }
+
+
 }

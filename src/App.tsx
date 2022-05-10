@@ -14,10 +14,12 @@ function App() {
         <div className='container_content-user'>
           <div className='user-head'>
             <img className='profile' src={image} alt='profile' />
-            <p>Report for</p>
-            <h2 className='profile-name'>
-            Jeremy Robson
-            </h2>
+            <div>
+              <p className='report'>Report for</p>
+              <h2 className='profile-name'>
+              Jeremy Robson
+              </h2>
+            </div>
           </div>
           <div className='user-timeline'>
           {
