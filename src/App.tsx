@@ -6,7 +6,7 @@ import { activityData } from './data.js';
 
 function App() {
   const timeline = ['daily', 'weekly', 'monthly'];
-  const [timeLineSelected, setTimeline] = useState('daily');
+  const [timeLineSelected, setTimeline] = useState('weekly');
 
   return (
     <section className="container">
