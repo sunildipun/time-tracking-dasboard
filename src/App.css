@@ -69,11 +69,13 @@
 
 @media only screen and (max-width: 600px) {
   .container {
-    height: 120%; 
+    height: auto; 
+    padding: 8rem 0;
   }
 
   .container__content {
       width: 90%;
+      height: auto;
       flex-direction: column;
   }
 

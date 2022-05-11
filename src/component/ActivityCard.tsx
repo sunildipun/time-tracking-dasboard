@@ -18,7 +18,7 @@ export function ActivityCard(props: any) {
     // const activityData = props.data;
     // console.log(props);
     let timeLine = props.timeline;
-    let [timeLineTitle, setTimelineTitle] = useState('Day')
+    let [timeLineTitle, setTimelineTitle] = useState('Week')
     // switch(timeLine) {
     //     case 'daily': setTimelineTitle('Day'); break;
     //     case 'weekly': setTimelineTitle('Week'); break;
